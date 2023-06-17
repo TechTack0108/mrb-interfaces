@@ -5,4 +5,5 @@ export default interface IUser {
   organizationId: string;
   provider?: any;
   providerId?: any;
+  histories: [{ name: string }]
 }
