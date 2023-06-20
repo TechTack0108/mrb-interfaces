@@ -7,8 +7,8 @@ export default interface IDocument {
 	receiver: string;
 	folderId: string;
 	filePath?: string;
-	receiveDate: Date;
-	uploadDate: Date;
+	receiveDate: string;
+	uploadDate: string;
 	fileName: string;
 	fileType: string;
 	documentText: string;

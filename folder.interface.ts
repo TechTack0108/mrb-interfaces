@@ -5,4 +5,5 @@ export default interface IFolder {
   shareFolderID?: string | null;
   path_display?: string | null;
   isRootFolder?: boolean;
+  numFiles: number;
 }
