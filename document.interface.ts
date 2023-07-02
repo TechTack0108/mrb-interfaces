@@ -2,7 +2,7 @@ export default interface IDocument {
 	fileId?: string;
 	subject: string;
 	refNo: string;
-	preRefNo: string;
+	preRefNo: string[];
 	sender: string;
 	receiver: string;
 	folderId: string;
