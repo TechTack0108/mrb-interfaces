@@ -10,6 +10,7 @@ export default interface IDocument {
 	receiveDate: string;
 	uploadDate: string;
 	fileName: string;
+	formattedName?: string;
 	fileType: string;
 	documentText: string;
 	documentSize: number;
