@@ -5,20 +5,25 @@ import IDocument from "./document.interface";
  * @example
  * {"2019": [
  *   {"Thang 1": [
- *     {"1": [IDocument, IDocument, ...]},
- *     {"2": [IDocument, IDocument, ...]},
+ *     {"1": {
+ *     		files: [IDocument, IDocument, ...],
+ *     		totalFiles: 100,
+ *     		totalPages: 10
+ *     		}
+ *     },
  *     ...
- *     {"31": [IDocument, IDocument, ...]}
  *   ]},
  *   ...
- *  {"Thang 12": [
- *     {"1": [IDocument, IDocument, ...]},
- *     {"2": [IDocument, IDocument, ...]},
- *     ...
- *     {"31": [IDocument, IDocument, ...]}
- *   ]},
  * ]}
  * */
 export interface ITimeline {
-	[year: string]: { [month: string]: { [day: string]: IDocument[] }[] }[];
+	[year: string]: {
+		[month: string]: {
+			[day: string]: {
+				files: IDocument[];
+				totalFiles: number;
+				totalPages: number;
+			};
+		}[];
+	}[];
 }
