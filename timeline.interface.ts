@@ -5,17 +5,17 @@ import IDocument from "./document.interface";
  * @example
  * {"2019": [
  *   {"Thang 1": [
- *     {"Ngay 1": [IDocument, IDocument, ...]},
- *     {"Ngay 2": [IDocument, IDocument, ...]},
+ *     {"1": [IDocument, IDocument, ...]},
+ *     {"2": [IDocument, IDocument, ...]},
  *     ...
- *     {"Ngay 31": [IDocument, IDocument, ...]}
+ *     {"31": [IDocument, IDocument, ...]}
  *   ]},
  *   ...
  *  {"Thang 12": [
- *     {"Ngay 1": [IDocument, IDocument, ...]},
- *     {"Ngay 2": [IDocument, IDocument, ...]},
+ *     {"1": [IDocument, IDocument, ...]},
+ *     {"2": [IDocument, IDocument, ...]},
  *     ...
- *     {"Ngay 31": [IDocument, IDocument, ...]}
+ *     {"31": [IDocument, IDocument, ...]}
  *   ]},
  * ]}
  * */
