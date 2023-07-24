@@ -10,7 +10,14 @@ export default interface IDocument {
 	receiveDate: string;
 	uploadDate: string;
 	fileName: string;
+	/**
+	 * The real name of the file, without the file extension.
+	 * */
 	formattedName?: string;
+	/**
+	 * Renamed file in the format of "receiveDate + refNo + subject".
+	 * */
+	renamedFileName?: string;
 	fileType: string;
 	documentText: string;
 	documentSize: number;
