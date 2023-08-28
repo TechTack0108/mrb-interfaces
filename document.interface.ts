@@ -1,4 +1,5 @@
 export default interface IDocument {
+	_id: string;
 	fileId?: string;
 	subject: string;
 	refNo: string;
@@ -26,6 +27,7 @@ export default interface IDocument {
 }
 
 export enum DocumentFieldMongo {
+	_id = "_id",
 	FIELD_ID = "$fieldId",
 	SUBJECT = "$subject",
 	REF_NO = "$refNo",
