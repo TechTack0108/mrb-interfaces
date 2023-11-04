@@ -1,7 +1,8 @@
 export default interface INotification {
-  _id?: string;
-  documentID: string;
-  userID: string;
-  message: string;
-  hasRead: boolean;
+	_id?: string;
+	documentID: string;
+	folderID: string;
+	userID: string;
+	message: string;
+	hasRead: boolean;
 }
